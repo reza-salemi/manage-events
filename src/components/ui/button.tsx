@@ -4,11 +4,15 @@ import { IButtonProps } from "./type";
 import classes from "./button.module.css";
 
 const Button = (props: IButtonProps) => {
-  return (
-    <Link className={classes.btn} href={props.link}>
-      {props.children}
-    </Link>
-  );
+  if (props.link) {
+    return (
+      <Link className={classes.btn} href={props.link}>
+        {props.children}
+      </Link>
+    );
+  }
+
+  return <button onClick={props.onClick}>{props.children}</button>;
 };
 
 export default Button;
