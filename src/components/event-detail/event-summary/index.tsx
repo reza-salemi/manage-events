@@ -1,7 +1,7 @@
 import classes from "./event-summary.module.css";
 import { IEventSummary } from "./type";
 
-function EventSummary(props: IEventSummary) {
+export const EventSummary = (props: IEventSummary) => {
   const { title } = props;
 
   return (
@@ -9,6 +9,4 @@ function EventSummary(props: IEventSummary) {
       <h1>{title}</h1>
     </section>
   );
-}
-
-export default EventSummary;
+};

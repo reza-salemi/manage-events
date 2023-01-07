@@ -1,8 +1,7 @@
 import classes from "./logistics-item.module.css";
 
-function LogisticsItem(props: any) {
+export const LogisticsItem = (props: any) => {
   const { icon: Icon } = props;
-
   return (
     <li className={classes.item}>
       <span className={classes.icon}>
@@ -11,6 +10,4 @@ function LogisticsItem(props: any) {
       <span className={classes.content}>{props.children}</span>
     </li>
   );
-}
-
-export default LogisticsItem;
+};
