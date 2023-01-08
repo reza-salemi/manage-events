@@ -1,12 +1,12 @@
-import { useRef } from "react";
+import { FormEvent, useRef } from "react";
 import Button from "../ui/button";
 import classes from "./events-search.module.css";
 
 const EventSearch = (props: any) => {
-  const yearInputRef = useRef(null);
-  const monthInputRef = useRef(null);
+  const yearInputRef = useRef<HTMLSelectElement>(null);
+  const monthInputRef = useRef<HTMLSelectElement>(null);
 
-  const submitHandler = (event: any) => {
+  const submitHandler = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const selectYear = yearInputRef.current?.value;

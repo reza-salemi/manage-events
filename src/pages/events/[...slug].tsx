@@ -35,7 +35,7 @@ const FilteredEvents = () => {
 
   return (
     <div>
-      <EventList item={filteredEvents} />
+      <EventList items={filteredEvents} />
     </div>
   );
 };
