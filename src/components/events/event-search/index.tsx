@@ -1,8 +1,8 @@
 import { FormEvent, useRef } from "react";
-import Button from "../ui/button";
+import Button from "../../ui/button";
 import classes from "./events-search.module.css";
 
-const EventSearch = (props: any) => {
+export const EventSearch = (props: any) => {
   const yearInputRef = useRef<HTMLSelectElement>(null);
   const monthInputRef = useRef<HTMLSelectElement>(null);
 
@@ -49,5 +49,3 @@ const EventSearch = (props: any) => {
     </form>
   );
 };
-
-export default EventSearch;

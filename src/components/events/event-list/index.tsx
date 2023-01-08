@@ -1,9 +1,9 @@
-import EventItem from "./event-item";
-import { IEventListProps } from "./type";
+import { EventItem } from "../event-item";
+import { IEventListProps } from "../type";
 
 import classes from "./event-list.module.css";
 
-const EventList = (props: IEventListProps) => {
+export const EventList = (props: IEventListProps) => {
   const { items } = props;
 
   return (
@@ -21,5 +21,3 @@ const EventList = (props: IEventListProps) => {
     </ul>
   );
 };
-
-export default EventList;

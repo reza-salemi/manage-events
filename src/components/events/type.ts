@@ -1,4 +1,4 @@
-export interface EventItem {
+export interface IEventItem {
   id: string;
   title: string;
   location: string;
@@ -7,5 +7,5 @@ export interface EventItem {
 }
 
 export interface IEventListProps {
-  items: EventItem[];
+  items: IEventItem[];
 }

@@ -1,11 +1,11 @@
-import Button from "../ui/button";
-import { EventItem } from "./type";
+import Button from "../../ui/button";
+import { IEventItem } from "../type";
 
-import { ArrowRightIcon, AddressIcon, DateIcon } from "../icons";
+import { ArrowRightIcon, AddressIcon, DateIcon } from "../../icons";
 
 import classes from "./event-item.module.css";
 
-const EventItem = (props: EventItem) => {
+export const EventItem = (props: IEventItem) => {
   const { title, image, date, location, id } = props;
 
   const humanReadableDate = new Date(date).toLocaleDateString("en-US", {
@@ -49,5 +49,3 @@ const EventItem = (props: EventItem) => {
     </li>
   );
 };
-
-export default EventItem;
