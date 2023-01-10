@@ -1,4 +1,4 @@
-import Button from "../../ui/button";
+import { Button } from "components/ui";
 import { IEventItem } from "../type";
 
 import { ArrowRightIcon, AddressIcon, DateIcon } from "../../icons";

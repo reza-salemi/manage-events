@@ -1,5 +1,5 @@
 import { FormEvent, useRef } from "react";
-import Button from "../../ui/button";
+import { Button } from "components/ui";
 import classes from "./events-search.module.css";
 
 export const EventSearch = (props: any) => {
